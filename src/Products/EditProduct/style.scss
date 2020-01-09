@@ -1,0 +1,42 @@
+.edit-product-form {
+    margin: auto;
+    legend {
+        padding: 0 5px;
+    }
+    .form-input  {
+        padding: 10px;
+        margin: auto;
+        margin-top: 10px;
+        &.has-error input {
+            border: 2px solid red;
+        }
+        &.has-no-error input {
+            border: 2px solid greenyellow;
+        }
+        label:first-of-type {
+            display: block;
+            font-weight: 700;
+            color: #5b5b5b;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        input {
+            box-sizing: border-box;
+            border: 1px solid #bababa;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            background: #f0f0f0;
+            width: -webkit-fill-available;
+            &:focus {
+                border: 2px solid #5b5b5b;
+                outline: none;
+            }
+        }
+        .error {
+            font-weight: 700;
+            color: red;
+            margin-top: 10px;
+        }
+    }
+}
